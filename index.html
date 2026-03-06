@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua's Executable Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="hero">
+    <p class="eyebrow">Software Portfolio</p>
+    <h1>Executable Projects Hub</h1>
+    <p class="hero-copy">
+      A single place to share, download, and showcase desktop tools and executable builds.
+    </p>
+    <a class="cta" href="#projects">View Projects</a>
+  </header>
+
+  <main>
+    <section id="about" class="card about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <strong>Joshua</strong>. I build practical software projects with Python and package them into executables.
+        This site is where I publish my builds, share short notes, and track what I'm shipping next.
+      </p>
+      <p>
+        I enjoy automating repetitive work, creating useful desktop tools, and improving user workflows.
+      </p>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="section-head">
+        <h2>My Executable Projects</h2>
+        <p>Add `.exe` files to your GitHub repo `projects/` folder and they appear here automatically after you set your GitHub username and repo below.</p>
+      </div>
+      <div
+        class="projects-grid"
+        id="projects-grid"
+        data-github-owner="YOUR_GITHUB_USERNAME"
+        data-github-repo="YOUR_REPO_NAME"
+        data-github-branch="main"
+        data-projects-path="projects"
+      >
+        <article class="card project-card">
+          <h3>Loading Projects...</h3>
+          <p>Project cards are generated from your repository.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Joshua | <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
